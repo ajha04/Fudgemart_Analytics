@@ -7,4 +7,4 @@ SELECT
     TO_DATE(shipped_date, 'YYYY-MM-DD') AS shipped_date,
     ship_via,
     creditcard_id
-FROM {{ source('fudgemart', 'fm_orders') }};
+FROM {{ source('fudgemart', 'fm_orders') }}
