@@ -8,7 +8,7 @@ SELECT
     p.product_name,
     SUM(od.order_qty * p.product_retail_price) AS total_sales,
     SUM(od.order_qty) AS total_quantity,
-    TRY_TO_DATE(o.order_date) AS order_date -- Safely parse the date
+    o.order_date -- Converted to a DATE in stg_fm_orders
 FROM {{ ref('stg_fm_orders') }} o
 JOIN {{ ref('stg_fm_order_details') }} od
     ON o.order_id = od.order_id
