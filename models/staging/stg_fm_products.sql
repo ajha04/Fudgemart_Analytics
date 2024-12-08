@@ -7,4 +7,4 @@ SELECT
     product_retail_price,
     product_wholesale_price,
     product_is_active
-FROM {{ source('fudgemart', 'fm_products') }};
+FROM {{ source('fudgemart', 'fm_products') }}
