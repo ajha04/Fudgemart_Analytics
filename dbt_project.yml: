@@ -1,0 +1,19 @@
+name: fudgemart_analytics
+version: "1.0"
+config-version: 2
+
+profile: default
+
+source-paths: ["models"]
+analysis-paths: ["analysis"]
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+models:
+  fudgemart_analytics:
+    staging:
+      materialized: view
+    marts:
+      materialized: table
