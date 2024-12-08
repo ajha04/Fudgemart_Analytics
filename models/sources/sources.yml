@@ -1,7 +1,8 @@
 version: 2
 sources:
   - name: fudgemart
-    schema: public
+    schema: fudgemart_v3
+    database: raw
     tables:
       - name: fm_products
         description: "Details about products sold by Fudgemart."
