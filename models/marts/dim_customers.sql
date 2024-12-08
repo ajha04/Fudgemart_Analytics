@@ -10,4 +10,4 @@ SELECT DISTINCT
     customer_state,
     customer_zip,
     customer_phone
-FROM {{ ref('stg_fm_customers') }};
+FROM {{ ref('stg_fm_customers') }}

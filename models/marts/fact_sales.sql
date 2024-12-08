@@ -18,4 +18,4 @@ JOIN {{ ref('stg_fm_customers') }} c
     ON o.customer_id = c.customer_id
 GROUP BY
     o.order_id, o.customer_id, c.customer_firstname, c.customer_lastname,
-    od.product_id, p.product_name, o.order_date;
+    od.product_id, p.product_name, o.order_date
