@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: fudgemart
+    database: raw
+    schema: fudgemart_v3
+    tables:
+      - name: fm_orders
+      - name: fm_order_details
+      - name: fm_products
+      - name: fm_customers
