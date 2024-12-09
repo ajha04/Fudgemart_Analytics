@@ -9,6 +9,8 @@ sources:
       - name: fm_order_details
       - name: fm_products
       - name: fm_customers
+      - name: fm_vendors
       - name: fm_shipvia_lookup
+      - name: fm_employee_timesheets
       - name: fm_employees
       - name: fm_customer_survey
