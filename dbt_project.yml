@@ -1,0 +1,26 @@
+name: fudgemart_analytics  # Your project name
+version: 1.0.0
+config-version: 2
+
+# Specify the default materialization (view, table, or incremental)
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# Define the profile name to match your dbt profile configuration
+profile: user
+
+target-path: "target"  # Directory for compiled SQL and artifacts
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  fudgemart_analytics:  # This should match your project name
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
